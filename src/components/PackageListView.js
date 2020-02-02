@@ -39,9 +39,6 @@ const PackageListView = () => {
       reader.onload = function(event) {
         try {
           let parsedResult = statusFileParser.parseStatusFile(event.target.result);
-          console.log("====================================");
-          console.log(parsedResult);
-          console.log("====================================");
           setPackages(parsedResult);
           setErrorMessage(null);
         } catch (error) {
