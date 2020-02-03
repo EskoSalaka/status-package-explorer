@@ -4,4 +4,8 @@ On a Debian and Ubuntu systems, there is a file called /var/lib/dpkg/status that
 
 The app works by using the local storage to save the parsed status file. In the package contents, every dependency and reverse dependency is a clickable link unless it's not found in the status file. Optional dependencies are separated with the pipe "|" character and they are also clickable in a similar manner.
 
-The app is built with react and and react-router.
+The app is built with react and and react-router, and is running in https://status-file-explorer.herokuapp.com/
+
+## Running the app
+
+Just do `npm install` and `npm run start-dev` to run the app locally. For deployment, do `npm run build` and `npm run start` to run the build.
